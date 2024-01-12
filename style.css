@@ -64,18 +64,6 @@ nav li a{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive mwdia quary */
 /* mobile devicese */
 @media screen and (max-width:576px) {
@@ -95,4 +83,34 @@ nav li a{
     nav{
         flex-direction: column;
     }
+}
+/* header responsive ed */
+/* main style */
+main{
+    max-width: 1440px;
+    margin:0 auto;
+}
+/* teames style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding: 0 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .text-features{
+    color: #FF900E;
+    font-family: 700;
 }
