@@ -11,6 +11,11 @@ font-size: 1.25rem;
 font-weight: 600;
 cursor: pointer;
 }
+.text-light-gray,.quick-list{
+ 
+    
+    color: #727272;
+}
 
 *{
     font-family: 'Work Sans', sans-serif;
@@ -49,46 +54,22 @@ nav li a{
     text-align: center;
     margin: 0 auto;
 }
-.bannner-title{
+.banner-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    font-size: 1rem;
-    font-size: 400;
-    color: #727272;
-}
+
 .banner img{
     margin-top: 20px;
     width: 100%;
 }
 
-/* responsive mwdia quary */
-/* mobile devicese */
-@media screen and (max-width:576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    
-}
-/* table or mediam devices */
-@media screen and (min-width:576px) and (max-width:992px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* header responsive ed */
+
 /* main style */
 main{
     max-width: 1440px;
-    margin:0 auto;
+    margin:70px auto;
 }
 /* teames style */
 .teams-container{
@@ -107,10 +88,59 @@ main{
     font-size: 2.8rem;
 }
 .teams-title .quick-list{
-    color: #727272;
+   
     font-weight: 500;
 }
 .teams-title .text-features{
     color: #FF900E;
     font-family: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive mwdia quary */
+/* mobile devicese */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav,
+    .teams-container
+    {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .teams-content{
+        padding: 0 20px;
+    }
+}
+/* table or mediam devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav,.teams-container{
+        flex-direction: column;
+    }
+    
+element.style {
+}
+.teams-content {
+
+    padding: 0 20px;
+}
+    
 }
